@@ -111,5 +111,5 @@ int main(int argc, char *argv[]) {
   /* Desaloca variaveis e termina */
   pthread_mutex_destroy(&x_mutex);
   pthread_cond_destroy(&x_cond);
-
+  pthread_cond_destroy(&x_condDois);
 }
