@@ -95,7 +95,8 @@ int main(int argc, char *argv[]) {
   /* Inicilaiza o mutex (lock de exclusao mutua) e a variavel de condicao */
   pthread_mutex_init(&x_mutex, NULL);
   pthread_cond_init (&x_cond, NULL);
-
+  pthread_cond_init (&x_condDois, NULL);
+  
   /* Cria as threads */
   pthread_create(&threads[4], NULL, Um, NULL);
   pthread_create(&threads[3], NULL, Dois, NULL);
